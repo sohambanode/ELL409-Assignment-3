@@ -1,0 +1,27 @@
+{
+  "data": {
+    "manifest": "manifests/cifar10.json",
+    "subset": 128,
+    "subset_seed": 42,
+    "all_train": false
+  },
+  "model": {
+    "kind": "tree",
+    "classes": 10,
+    "width": 0.125,
+    "depth": 3,
+    "pool_size": 1
+  },
+  "train": {
+    "epochs": 200,
+    "batch_size": 128,
+    "lr": 0.001,
+    "seed": 42,
+    "workers": 0,
+    "auxiliary": 0.0,
+    "balance": 0.0,
+    "penalty_decay_epochs": 0,
+    "device": "auto",
+    "uniform": false
+  }
+}

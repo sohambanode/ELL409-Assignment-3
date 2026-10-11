@@ -1,0 +1,18 @@
+{
+  "python": "3.13.2",
+  "torch": "2.13.0",
+  "torchvision": "0.28.0",
+  "numpy": "2.5.2",
+  "platform": "macOS-26.6.1-arm64-arm-64bit-Mach-O",
+  "commit": null,
+  "source_sha256": "a447bb63d1122f332dcbd173007e8219fbe1095d1c4722c1b17686bfba2ecbec",
+  "manifest_sha256": "6ca2891b8633d9f710d15d515a05374e5ce385413591811aae322da2909db4ae",
+  "mps_fallback_env": "unset",
+  "device": "cpu",
+  "parameters": 45189,
+  "trainable_parameters": 45189,
+  "train_samples": 45000,
+  "validation_samples": 5000,
+  "from_features": false,
+  "resumed_from": null
+}

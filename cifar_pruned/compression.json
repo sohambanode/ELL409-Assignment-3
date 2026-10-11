@@ -1,0 +1,119 @@
+{
+  "reference_checkpoint": "runs/cifar_pilot/last.pt",
+  "reference_sha256": "b7c1291c68afcf836cc357be54f12a08f3e85eeb4b20eea849706d9f95746e5d",
+  "reference": {
+    "train": {
+      "count": 128,
+      "errors": 0,
+      "accuracy": 1.0,
+      "cross_entropy": 0.007896079681813717,
+      "nodes": {}
+    },
+    "val": {
+      "count": 5000,
+      "errors": 4229,
+      "accuracy": 0.1542,
+      "cross_entropy": 24.067698529052734,
+      "nodes": {}
+    }
+  },
+  "ranking_before_finetuning": [
+    {
+      "node": 2,
+      "parameters": 40950,
+      "val": {
+        "count": 5000,
+        "errors": 4260,
+        "accuracy": 0.14800000000000002,
+        "cross_entropy": 23.39249835510254,
+        "nodes": {}
+      }
+    },
+    {
+      "node": 6,
+      "parameters": 43776,
+      "val": {
+        "count": 5000,
+        "errors": 4269,
+        "accuracy": 0.1462,
+        "cross_entropy": 24.683104751586914,
+        "nodes": {}
+      }
+    },
+    {
+      "node": 5,
+      "parameters": 43776,
+      "val": {
+        "count": 5000,
+        "errors": 4273,
+        "accuracy": 0.14539999999999997,
+        "cross_entropy": 24.617260931396483,
+        "nodes": {}
+      }
+    },
+    {
+      "node": 3,
+      "parameters": 43776,
+      "val": {
+        "count": 5000,
+        "errors": 4338,
+        "accuracy": 0.13239999999999996,
+        "cross_entropy": 27.662423944091795,
+        "nodes": {}
+      }
+    },
+    {
+      "node": 4,
+      "parameters": 43776,
+      "val": {
+        "count": 5000,
+        "errors": 4344,
+        "accuracy": 0.13119999999999998,
+        "cross_entropy": 24.149359985351563,
+        "nodes": {}
+      }
+    },
+    {
+      "node": 1,
+      "parameters": 40950,
+      "val": {
+        "count": 5000,
+        "errors": 4388,
+        "accuracy": 0.12239999999999995,
+        "cross_entropy": 55.81218610229492,
+        "nodes": {}
+      }
+    },
+    {
+      "node": 0,
+      "parameters": 35298,
+      "val": {
+        "count": 5000,
+        "errors": 4462,
+        "accuracy": 0.10760000000000003,
+        "cross_entropy": 122.10931225585938,
+        "nodes": {}
+      }
+    }
+  ],
+  "pruned_node": 2,
+  "compressed": {
+    "train": {
+      "count": 128,
+      "errors": 0,
+      "accuracy": 1.0,
+      "cross_entropy": 0.02756635844707489,
+      "nodes": {}
+    },
+    "val": {
+      "count": 5000,
+      "errors": 4154,
+      "accuracy": 0.16920000000000002,
+      "cross_entropy": 15.48149204711914,
+      "nodes": {}
+    }
+  },
+  "parameters": 40950,
+  "accepted": true,
+  "criterion": "train accuracy >=99.9%, validation loss in accuracy <=1 percentage point relative to this reference"
+}

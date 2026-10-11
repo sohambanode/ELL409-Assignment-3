@@ -1,0 +1,58 @@
+{
+  "method": "Structured L1 channel selection and spatial pooling reduction, then fine-tuning",
+  "reference_checkpoint": "runs/cifar_pilot/last.pt",
+  "reference_sha256": "b7c1291c68afcf836cc357be54f12a08f3e85eeb4b20eea849706d9f95746e5d",
+  "reference": {
+    "train": {
+      "count": 128,
+      "errors": 0,
+      "accuracy": 1.0,
+      "cross_entropy": 0.007896079681813717,
+      "nodes": {}
+    },
+    "val": {
+      "count": 5000,
+      "errors": 4229,
+      "accuracy": 0.1542,
+      "cross_entropy": 24.067698529052734,
+      "nodes": {}
+    }
+  },
+  "before_finetuning": {
+    "train": {
+      "count": 128,
+      "errors": 119,
+      "accuracy": 0.0703125,
+      "cross_entropy": 2.746762752532959,
+      "nodes": {}
+    },
+    "val": {
+      "count": 5000,
+      "errors": 4529,
+      "accuracy": 0.09419999999999995,
+      "cross_entropy": 2.7990862033843995,
+      "nodes": {}
+    }
+  },
+  "compressed": {
+    "train": {
+      "count": 128,
+      "errors": 63,
+      "accuracy": 0.5078125,
+      "cross_entropy": 1.2212412357330322,
+      "nodes": {}
+    },
+    "val": {
+      "count": 5000,
+      "errors": 4066,
+      "accuracy": 0.18679999999999997,
+      "cross_entropy": 3.3165935733795164,
+      "nodes": {}
+    }
+  },
+  "reference_parameters": 45189,
+  "parameters": 8353,
+  "parameter_reduction": 0.8151541304299719,
+  "accepted": false,
+  "criterion": "train accuracy >=99.9%, validation accuracy drop <=1 percentage point"
+}
